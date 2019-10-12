@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>All student detals</title>
+    <link rel="stylesheet" href="{% static 'student.css' %}">
+  </head>
+  <body>
+    <div class="table">
+      <h2>Student Details</h2>
+    <table border="1">
+      <tr>
+        <th>name</th>
+        <th>department</th>
+        <th>picture</th>
+        <th>first name</th>
+        <th>last name</th>
+        <th>password</th>
+        <th>conform password</th>
+        <th>update</th>
+        <th>delete</th>
+      </tr>
+      {% for student in obj %}
+      <tr>
+        <td>{{ student.name }}</td>
+        <td>{{ student.department }}</td>
+        <td>{{ student.picture }}</td>
+        <td>{{ student.first_name }}</td>
+        <td>{{ student.last_name }}</td>
+        <td>{{ student.password }}</td>
+        <td>{{ student.conform_password }}</td>
+        <td><a href="./update{{ student.id }}">update</a></td>
+        <td><a href="./delete{{ student.id }}">delete</a></td>
+      </tr>
+      {% endfor %}
+    </table><br><br>
+    <p id="create">click here to insert<a href="./signup"> new record</a></p>
+    </div>
+  </body>
+</html>

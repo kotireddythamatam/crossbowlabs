@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>update of a student</title>
+  </head>
+  <body>
+    <form class="" action="" method="post">
+      {% csrf_token %}
+      name <input type="text" name="t1" value="{{ edit_obj.name }}"><br>
+      deployment <input type="text" name="t2" value="{{ edit_obj.department }}"><br>
+      Picture <input type="file" name="t3" value="{{ edit_obj.picture }}"><br>
+      first name <input type="text" name="t4" value="{{ edit_obj.first_name }}"><br>
+      last name <input type="text" name="t5" value="{{ edit_obj.last_name }}"><br>
+      password <input type="psssword" name="t6" value="{{ edit_obj.password }}"><br>
+      conform password <input type="password" name="t7" value="{{ edit_obj.conform_password }}"><br>
+      <input type="submit" value="update">
+    </form>
+  </body>
+</html>
