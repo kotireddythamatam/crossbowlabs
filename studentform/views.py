@@ -3,7 +3,7 @@ from . forms import Student_login_form, Student_signup_form
 from . models import Student_model
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
-#This is student form
+#This is student form for crossbowlabs.com task
 def Student_signup_view(request):
     if request.method == "GET":
         form = Student_signup_form()
