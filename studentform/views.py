@@ -50,3 +50,5 @@ def delete(request,id):
     delete_obj = Student_model.objects.get(id=id)
     delete_obj.delete()
     return HttpResponseRedirect('./display')
+
+#This is ending of views
