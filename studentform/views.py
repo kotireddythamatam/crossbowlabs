@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from . forms import Student_login_form, Student_signup_form
 from . models import Student_model
+<<<<<<< HEAD
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 #This is student form for crossbowlabs.com task
+from django.http import HttpResponse, HttpResponseRedirect
+#This is from branch and i have made some changes to the branch koti now you can go with the master.
+
 def Student_signup_view(request):
     if request.method == "GET":
         form = Student_signup_form()
