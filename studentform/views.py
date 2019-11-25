@@ -52,4 +52,4 @@ def delete(request,id):
     delete_obj.delete()
     return HttpResponseRedirect('./display')
 
-#This is ending of views
+#This is ending of views for task of crossbowlabs.com
