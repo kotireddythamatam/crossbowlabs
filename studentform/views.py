@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from . forms import Student_login_form, Student_signup_form
 from . models import Student_model
-<<<<<<< HEAD
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 #This is student form for crossbowlabs.com task
