@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from . forms import Student_login_form, Student_signup_form
 from . models import Student_model
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 #This is student form
 def Student_signup_view(request):
     if request.method == "GET":
