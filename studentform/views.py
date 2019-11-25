@@ -6,7 +6,7 @@ from django.http import HttpResponse
 #This is student form for crossbowlabs.com task
 from django.http import HttpResponse, HttpResponseRedirect
 #This is from branch and i have made some changes to the branch koti now you can go with the master.
-
+#ok
 def Student_signup_view(request):
     if request.method == "GET":
         form = Student_signup_form()
