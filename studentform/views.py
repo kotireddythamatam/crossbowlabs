@@ -27,6 +27,7 @@ def Student_login_view(request):
             else:
                 return HttpResponseRedirect('./login')
 
+#This is for displaying for all records.
 def display(request):
     obj = Student_model.objects.all()
     return render(request,'display.html',{'obj':obj})
