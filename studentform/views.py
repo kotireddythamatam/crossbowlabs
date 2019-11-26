@@ -4,7 +4,7 @@ from . models import Student_model
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from django.http import HttpResponse, HttpResponseRedirect
-
+#This is from branch three
 def Student_signup_view(request):
     if request.method == "GET":
         form = Student_signup_form()
